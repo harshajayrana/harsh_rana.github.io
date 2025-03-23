@@ -10,6 +10,34 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<style>
+			.custom-button {
+			  display: inline-block;
+			  background-color: #4CAF50;
+			  color: white;
+			  text-decoration: none;
+			  padding: 8px 16px;
+			  border-radius: 4px;
+			  font-weight: 500;
+			  letter-spacing: 0.5px;
+			  transition: all 0.3s ease;
+			  border: none;
+			  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+			}
+			
+			.custom-button:hover {
+			  background-color: #45a049;
+			  transform: translateY(-2px);
+			  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+			}
+
+			.smaller-portrait {
+				max-width: 300px;
+				height: auto;
+			}
+		  </style>
+
 	</head>
 	<body class="is-preload">
 
@@ -17,9 +45,9 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/UCB.svg" alt="" /></a>
-					<h1><strong>I am Harsh</strong>, a <strong>Mechanical</strong> Engineer<br />
-					from <strong>UC Berkeley</strong> with concentration in<br />
-					<strong>Robotics</strong> and <strong>Deep Tech</strong></h1>
+					<h1><strong>I am Harsh, a Mechanical Engineer<br />
+					from UC Berkeley with concentration in<br />
+					Robotics and Automation</h1>
 				</div>
 			</header>
 
@@ -31,17 +59,17 @@
 						<header class="major">
 							<h2>About me:</h2>
 						</header>
-						<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span></p>
+						<p><span class="image left"><img src="images/avatar.jpg" alt="" class="smaller-portrait" /></span></p>	
 						<p><h3>I have experience in - </h3> <br>
 							- <strong>Mechanical engineering</strong> (Core)<br>
-							- <strong>Rapid prototyping </strong>(DFM, 3D printing)<br>
-							- <strong>Robotics and Automation </strong>(ROS2, python) <br>
+							- <strong>Lean Manufacturing</strong> (TPM, 6Sigma, JIT, PQCDSM)<br>
+							- <strong>Rapid prototyping </strong>(DFM, GD&T, 3D printing)<br>
+							- <strong>Robotics and Automation </strong>(C++, python, ROS2) <br>
 							- <strong>Product design and development </strong>(CAD/CAM, Innovation)<br>
 							- <strong>Industry 4.0 </strong>(Technology roadmaps, IOT, AI integration)<br>
 							- <strong>Deep Tech commercialization strategies </strong>(Intellectual property, patent landscape analysis)</p>
 						<ul class="actions">
-							<li><a href="assets\files\Resume_Robotics.pdf" class="button">Resume Robotics</a></li>
-							<li><a href="assets\files\Resume_Mechanical.pdf" class="button">Resume Mechanical</a></li>
+							<li><a href="assets\files\Resume_Harsh_Rana.pdf" class="button">View Resume</a></li>
 						</ul>
 					</section>
 
@@ -49,48 +77,154 @@
 					<section id="two">
 						<h1>Recent work & past projects:</h1>
 						<div class="row">
-							<article class="col-6 col-12-xsmall actions">
-								<a href="https://github.com/harshajayrana/vention_robotics.git" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Vention Robotics - NVIDIA CuRobo</h3>
-								<p>Implementing NVIDIA's CuRobo package in Vention's custom robotic applications.<br>
-									Integrating linear rails to be the 7th and 8th axis as the gantry setup for common industrial robot arms like UR, FANUC and KUKA.</p>
+							<article class="col-12 col-12-xsmall actions">
+								<div class="row">
+								  <!-- Left column for image - takes up 4/12 of the width -->
+								  <div class="col-4 col-12-small">
+									<a href="https://github.com/harshajayrana/vention_robotics.git" class="image fit thumb">
+									  <img src="images/thumbs/06.jpg" alt="" />
+									</a>
+								  </div>
+								  <!-- Right column for text - takes up 8/12 of the width -->
+								  <div class="col-8 col-12-small">
+									<h3>Vention Robotics - NVIDIA CuRobo</h3>
+									<p>Implementing NVIDIA's CuRobo package in Vention's custom robotic applications.<br>
+									  Integrating linear rails to be the 7th and 8th axis as the gantry setup for common industrial robot arms like UR, FANUC and KUKA.</p>
+									  <!-- Add button here -->
+      								<ul class="actions">
+										<li><a href="https://github.com/harshajayrana/vention_robotics.git" class="button">View Code</a></li>
+									</ul>
+								  </div>
+								</div>
 							</article>
-							<article class="col-6 col-12-xsmall actions">
-								<a href="assets\files\BTP_Portfolio.pdf" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Dual 5 Bar Robotic 3D printer<br></h3>
-								<h5> - Paper published<br> - Patent filed</h5>
-								<p>The robot comprises two Scara configuration robots joined together to form a closed chain 5-bar mechanism. 
-									It offers sturdiness, accuracy, and higher manipulability.</p>
+							<article class="col-12 col-12-xsmall actions">
+								<div class="row">
+								<!-- Left column for image - takes up 4/12 of the width -->
+								<div class="col-4 col-12-small">
+									<a href="assets\files\BTP_Portfolio.pdf" class="image fit thumb">
+									<img src="images/thumbs/02.jpg" alt="" />
+									</a>
+								</div>
+								<!-- Right column for text - takes up 8/12 of the width -->
+								<div class="col-8 col-12-small">
+									<h3>Dual 5 Bar Robotic 3D printer</h3>
+									<p>The robot comprises two Scara configuration robots joined together to form a closed chain 5-bar mechanism. 
+									It offers sturdiness, accuracy, and higher manipulability.<br>
+									- Paper published<br> - Patent filed</p>
+									<!-- Add button here -->
+									<ul class="actions">
+									<li><a href="assets\files\BTP_Portfolio.pdf" class="button">View Project</a></li>
+									</ul>
+								</div>
+								</div>
 							</article>
-							<article class="col-6 col-12-xsmall actions">
-								<a href="https://drive.google.com/drive/folders/1D6ReWxSAi7bCUc-TjtqPNazLWhv8CBzs?usp=sharing" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Deep Tech Commercialization<br> - NASA project</h3>
-								<p>Worked on complete patent landscape and market analysis for an innovative multi-walled carbon nanotube sensor, licensed by NASA.</p>
+							
+							<!-- Deep Tech Commercialization -->
+							<article class="col-12 col-12-xsmall actions">
+								<div class="row">
+								<!-- Left column for image - takes up 4/12 of the width -->
+								<div class="col-4 col-12-small">
+									<a href="https://drive.google.com/drive/folders/1D6ReWxSAi7bCUc-TjtqPNazLWhv8CBzs?usp=sharing" class="image fit thumb">
+									<img src="images/thumbs/03.jpg" alt="" />
+									</a>
+								</div>
+								<!-- Right column for text - takes up 8/12 of the width -->
+								<div class="col-8 col-12-small">
+									<h3>Deep Tech Commercialization - NASA project</h3>
+									<p>Worked on complete patent landscape and market analysis for an innovative multi-walled carbon nanotube sensor, licensed by NASA.</p>
+									<!-- Add button here -->
+									<ul class="actions">
+									<li><a href="https://drive.google.com/drive/folders/1D6ReWxSAi7bCUc-TjtqPNazLWhv8CBzs?usp=sharing" class="button">View Project</a></li>
+									</ul>
+								</div>
+								</div>
 							</article>
-							<article class="col-6 col-12-xsmall actions">
-								<a href="https://drive.google.com/drive/folders/1QqZP7n4mitW38rZdHtjfUZBpqcWvFaXb?usp=sharing" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Robotics Automation for KTM motorcycle engine assembly<br> - Bajaj Auto Ltd.</h3>
-								<p>Led a cross-functional team of 15+ professionals for developing a pick and place stage of a complete autonomous assembly line.<br>
+							
+							<!-- Robotics Automation for KTM -->
+							<article class="col-12 col-12-xsmall actions">
+								<div class="row">
+								<!-- Left column for image - takes up 4/12 of the width -->
+								<div class="col-4 col-12-small">
+									<a href="https://drive.google.com/drive/folders/1QqZP7n4mitW38rZdHtjfUZBpqcWvFaXb?usp=sharing" class="image fit thumb">
+									<img src="images/thumbs/05.jpg" alt="" />
+									</a>
+								</div>
+								<!-- Right column for text - takes up 8/12 of the width -->
+								<div class="col-8 col-12-small">
+									<h3>Robotics Automation for KTM motorcycle engine assembly - Bajaj Auto Ltd.</h3>
+									<p>Led a cross-functional team of 15+ professionals for developing a pick and place stage of a complete autonomous assembly line.<br>
 									Worked with AMR robots.<br>
-									Integrated Cognex vision system in FANUC robots.
-								</p>
+									Integrated Cognex vision system in FANUC robots.</p>
+									<!-- Add button here -->
+									<ul class="actions">
+									<li><a href="https://drive.google.com/drive/folders/1QqZP7n4mitW38rZdHtjfUZBpqcWvFaXb?usp=sharing" class="button">View Project</a></li>
+									</ul>
+								</div>
+								</div>
 							</article>
-							<article class="col-6 col-12-xsmall actions">
-								<a href="assets\files\Report_Bajaj_Final.pdf" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Press and Fabrication of Sheet metal <br> - Bajaj Auto Ltd.</h3>
-								<p>Sheet Metal Forming is the sole process for manufacturing various parts in the Automotive Industry. In this study, a combination of U-Forming and Mandrel-CAM operation, 
+							
+							<!-- Press and Fabrication -->
+							<article class="col-12 col-12-xsmall actions">
+								<div class="row">
+								<!-- Left column for image - takes up 4/12 of the width -->
+								<div class="col-4 col-12-small">
+									<a href="assets\files\Report_Bajaj_Final.pdf" class="image fit thumb">
+									<img src="images/thumbs/04.jpg" alt="" />
+									</a>
+								</div>
+								<!-- Right column for text - takes up 8/12 of the width -->
+								<div class="col-8 col-12-small">
+									<h3>Press and Fabrication of Sheet metal - Bajaj Auto Ltd.</h3>
+									<p>Sheet Metal Forming is the sole process for manufacturing various parts in the Automotive Industry. In this study, a combination of U-Forming and Mandrel-CAM operation, 
 									along with the simulation results have been presented for a highly curved and hard to manufacture silencer part.</p>
+									<!-- Add button here -->
+									<ul class="actions">
+									<li><a href="assets\files\Report_Bajaj_Final.pdf" class="button">View Report</a></li>
+									</ul>
+								</div>
+								</div>
 							</article>
-							<article class="col-6 col-12-xsmall actions">
-								<a href="assets\files\Aero_portfolio.pdf" class="image fit thumb"><img src="images/thumbs/07.jpg" alt="" /></a>
-								<h3>Drones + RC Planes + Simulations<br> - Aeromodelling Club</h3>
-								<p>Leading projects on UAVs (drones, planes, and flapping wing mechanisms). Managed various teams and competitions.
-								</p>
+							
+							<!-- Drones + RC Planes -->
+							<article class="col-12 col-12-xsmall actions">
+								<div class="row">
+								<!-- Left column for image - takes up 4/12 of the width -->
+								<div class="col-4 col-12-small">
+									<a href="assets\files\Aero_portfolio.pdf" class="image fit thumb">
+									<img src="images/thumbs/07.jpg" alt="" />
+									</a>
+								</div>
+								<!-- Right column for text - takes up 8/12 of the width -->
+								<div class="col-8 col-12-small">
+									<h3>Drones + RC Planes + Simulations - Aeromodelling Club</h3>
+									<p>Leading projects on UAVs (drones, planes, and flapping wing mechanisms). Managed various teams and competitions.</p>
+									<!-- Add button here -->
+									<ul class="actions">
+									<li><a href="assets\files\Aero_portfolio.pdf" class="button">View Portfolio</a></li>
+									</ul>
+								</div>
+								</div>
 							</article>
-							<article class="col-6 col-12-xsmall actions">
-								<a href="images/thumbs/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>6 axis Robotic Arm</h3>
-								<p>Developing an Open-source robotic arm from Redrabbit Robotics</p>
+							
+							<!-- 6 axis Robotic Arm -->
+							<article class="col-12 col-12-xsmall actions">
+								<div class="row">
+								<!-- Left column for image - takes up 4/12 of the width -->
+								<div class="col-4 col-12-small">
+									<a href="images/thumbs/01.jpg" class="image fit thumb">
+									<img src="images/thumbs/01.jpg" alt="" />
+									</a>
+								</div>
+								<!-- Right column for text - takes up 8/12 of the width -->
+								<div class="col-8 col-12-small">
+									<h3>6 axis Robotic Arm</h3>
+									<p>Developing an Open-source robotic arm from Redrabbit Robotics</p>
+									<!-- Add button here -->
+									<ul class="actions">
+									<li><a href="images/thumbs/01.jpg" class="button">View Project</a></li>
+									</ul>
+								</div>
+								</div>
 							</article>
 						</div>
 					</section>
