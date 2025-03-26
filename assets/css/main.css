@@ -2446,7 +2446,7 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.35em;
-		border: solid 3px #efefef;
+		border: solid 3px rgb(177, 177, 177);
 		color: #787878 !important;
 		cursor: pointer;
 		display: inline-block;
@@ -2454,7 +2454,7 @@ input, select, textarea {
 		height: 3.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
-		min-width: 10em;
+		min-width: 0em;
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
